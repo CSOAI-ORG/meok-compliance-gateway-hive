@@ -1,0 +1,45 @@
+{
+  "agent_id": "meok-compliance-gateway",
+  "agentmemory_agent_scope": "isolated",
+  "version": "v0.9.26",
+  "storage": {
+    "type": "local",
+    "path": ".agentmemory/meok-compliance-gateway/"
+  },
+  "tiered": {
+    "in_runtime": {
+      "type": "letta",
+      "layers": [
+        "core",
+        "archival",
+        "recall"
+      ]
+    },
+    "long_term": {
+      "type": "agentmemory",
+      "modes": [
+        "working",
+        "episodic",
+        "semantic"
+      ]
+    }
+  },
+  "recall_target": "95.2%_R@5_LongMemEval-S",
+  "auto_capture": {
+    "tool_use": true,
+    "session_summaries": true,
+    "compress_observations": true
+  },
+  "shared_pool": {
+    "enabled": false,
+    "cross_hive_context": false
+  },
+  "isolated_overrides": [
+    "x402_payment_data",
+    "usage_counters"
+  ],
+  "links": {
+    "memoria_namespace": "meok-compliance-gateway",
+    "cognee_subgraph": "meok-compliance-gateway"
+  }
+}
