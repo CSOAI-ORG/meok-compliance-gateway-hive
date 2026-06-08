@@ -1,0 +1,38 @@
+# meok-compliance-gateway
+
+> Streamable-HTTP gateway + x402 paywall — THIS repo.
+> Open. Transparent. Governed.
+
+## Key facts
+
+- **Domain:** meok-compliance-gateway
+- **Tier:** infra
+- **MCP endpoint:** https://meok-compliance-gateway/mcp (streamable-HTTP, MCP 1.27.2)
+- **A2A Agent Card:** https://meok-compliance-gateway/.well-known/agent-card.json
+- **Open source:** https://github.com/CSOAI-ORG/meok-compliance-gateway-hive (MIT)
+- **Pricing (x402 micro-call):** x402 $ 0.05/call (free tier: 1/day)
+- **Pricing (SaaS tier):** Business ($49/user/mo)
+- **Memory mode:** isolated
+- **Knowledge subgraph scope:** MCP transport, x402 payments, usage accounting, PayGo balance
+
+## Tools exposed (MCP)
+
+- meok-compliance-gateway
+
+## Cross-hive integrations
+
+- csoai.org (wraps flagship MCPs)
+- proofof.ai (x402 receipts)
+- openmoe.ai (BFT receipts via x402)
+
+## Brand
+
+- **Palette:** gateway slate + x402 amber
+- **Voice:** Wrapper, hermetic, instrumented. Speaks in `Mcp-Method` headers and atomic units.
+
+## Sources
+
+- Hive architecture: https://github.com/CSOAI-ORG/meok-compliance-gateway/blob/main/FLEET_BASE.md
+- Global strategy: see the MEOK memory file meok-global-strategy-2026-06-07
+- Crown jewels: see the MEOK memory file meok-crown-jewels-2026-06-07
+- GEO strategy: see the MEOK memory file meok-geo-strategy-2026-06-07
