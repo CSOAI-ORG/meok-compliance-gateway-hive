@@ -1,0 +1,36 @@
+{
+  "name": "meok-compliance-gateway",
+  "description": "Streamable-HTTP gateway + x402 paywall \u2014 THIS repo.",
+  "url": "https://meok-compliance-gateway.ai",
+  "provider": {
+    "organization": "CSOAI LTD (UK Companies House 16939677)",
+    "url": "https://csoai.org"
+  },
+  "version": "1.0.0",
+  "capabilities": {
+    "streaming": false,
+    "pushNotifications": false
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text"
+  ],
+  "skills": [
+    {
+      "id": "governance-check",
+      "name": "meok-compliance-gateway Governance Check",
+      "description": "Verify compliance against meok-compliance-gateway frameworks."
+    },
+    {
+      "id": "attestation",
+      "name": "Signed Attestation",
+      "description": "Generate HMAC-signed compliance certs for meok-compliance-gateway."
+    }
+  ],
+  "endpoints": {
+    "catalogue": "https://www.proofof.ai",
+    "standards": "https://csoai.org"
+  }
+}

@@ -1,0 +1,20 @@
+{
+  "acpVersion": "0.1",
+  "agent": {
+    "name": "meok-compliance-gateway",
+    "description": "Streamable-HTTP gateway + x402 paywall \u2014 THIS repo.",
+    "version": "0.1.0",
+    "provider": "CSOAI-ORG",
+    "interfaces": [
+      {
+        "type": "a2a",
+        "url": "https://meok-compliance-gateway"
+      }
+    ],
+    "capabilities": [
+      "meok-compliance-gateway",
+      "a2a-mesh",
+      "memoria-commit"
+    ]
+  }
+}
