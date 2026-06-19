@@ -1,0 +1,61 @@
+{
+  "name": "meok-compliance-gateway",
+  "description": "Streamable-HTTP gateway + x402 paywall — THIS repo.",
+  "url": "https://meok-compliance-gateway",
+  "version": "0.1.0",
+  "provider": {
+    "organization": "CSOAI-ORG",
+    "url": "https://csoai.org"
+  },
+  "capabilities": {
+    "streaming": true,
+    "pushNotifications": false,
+    "stateTransitionHistory": true
+  },
+  "defaultInputModes": [
+    "text"
+  ],
+  "defaultOutputModes": [
+    "text",
+    "json"
+  ],
+  "skills": [
+    {
+      "id": "meok-compliance-gateway",
+      "name": "meok-compliance-gateway",
+      "description": "Tool: meok-compliance-gateway (part of meok-compliance-gateway hive L5)"
+    },
+    {
+      "id": "a2a-mesh",
+      "name": "Cross-hive A2A call",
+      "description": "Can call other MEOK hives via A2A (with user consent)"
+    },
+    {
+      "id": "memoria-commit",
+      "name": "Versioned memory commit",
+      "description": "Commits to memoria namespace 'meok-compliance-gateway'"
+    }
+  ],
+  "securitySchemes": {
+    "oauth2": {
+      "type": "oauth2",
+      "flows": {
+        "authorizationCode": {
+          "authorizationUrl": "https://meok-compliance-gateway/oauth/authorize",
+          "tokenUrl": "https://meok-compliance-gateway/oauth/token",
+          "scopes": {
+            "read": "Read hive state",
+            "write": "Invoke tools (x402-metered)",
+            "audit": "Read audit trail"
+          }
+        }
+      }
+    }
+  },
+  "x402Pricing": {
+    "enabled": true,
+    "currency": "USD",
+    "amount": "0.05",
+    "freeCallsPerIPPerDay": "1"
+  }
+}
